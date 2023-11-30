@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-11-28T01:17:24.462825+00:00",
+  "timestamp": "2023-11-30T01:16:29.289585+00:00",
   "repo": "seanturner/cmcbis",
   "labels": [
     {
@@ -94,7 +94,7 @@
       "labels": [],
       "body": "Update 5272*bis to remove defaults of SHA-1 and HMAC-SHA-1.",
       "createdAt": "2023-10-13T16:29:35Z",
-      "updatedAt": "2023-10-18T22:47:48Z",
+      "updatedAt": "2023-11-29T16:03:56Z",
       "closedAt": null,
       "comments": [
         {
@@ -103,6 +103,13 @@
           "body": "References to SHA-1 and HMAC-SHA-1\r\n\r\nhttps://seanturner.github.io/cmcbis/draft-mandel-lamps-rfc5272bis.html#name-identity-proof-control\r\nhttps://seanturner.github.io/cmcbis/draft-mandel-lamps-rfc5272bis.html#section-6.3.1.2\r\nhttps://seanturner.github.io/cmcbis/draft-mandel-lamps-rfc5272bis.html#section-6.7\r\nhttps://seanturner.github.io/cmcbis/draft-mandel-lamps-rfc5272bis.html#section-6.15\r\n \r\nhttps://seanturner.github.io/cmcbis/draft-mandel-lamps-rfc5274bis.html#name-cryptographic-algorithm-req ",
           "createdAt": "2023-10-18T22:47:48Z",
           "updatedAt": "2023-10-18T22:47:48Z"
+        },
+        {
+          "author": "seanturner",
+          "authorAssociation": "OWNER",
+          "body": "Also see B.3:\r\nhttps://seanturner.github.io/cmcbis/draft-mandel-lamps-rfc5272bis.html#name-direct-pop-for-an-rsa-certi",
+          "createdAt": "2023-11-29T16:03:55Z",
+          "updatedAt": "2023-11-29T16:03:55Z"
         }
       ]
     },
