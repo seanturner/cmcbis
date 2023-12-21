@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-19T01:16:22.267398+00:00",
+  "timestamp": "2023-12-21T01:15:33.576758+00:00",
   "repo": "seanturner/cmcbis",
   "labels": [
     {
@@ -1053,25 +1053,42 @@
       "id": "PR_kwDOKfq5gM5eKCDS",
       "title": "Update ASN.1 from RFC 6402",
       "url": "https://github.com/seanturner/cmcbis/pull/23",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "mandelj7",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Added ASN.1 from RFC 6402 and removed the old text",
       "createdAt": "2023-10-30T19:10:36Z",
-      "updatedAt": "2023-10-31T01:50:59Z",
+      "updatedAt": "2023-12-20T22:01:41Z",
       "baseRepository": "seanturner/cmcbis",
       "baseRefName": "Update-ASN.1",
       "baseRefOid": "faff915deb479bcff17988be18bd5ef93a29e749",
       "headRepository": "seanturner/cmcbis",
       "headRefName": "Updated-ASN.1",
-      "headRefOid": "ba13d216e915272f2dab9f62019647ce923e7395",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
-      "comments": [],
+      "headRefOid": "7f54f4823db779cddb82f135afac705d61fa15a0",
+      "closedAt": "2023-12-20T22:01:41Z",
+      "mergedAt": "2023-12-20T22:01:41Z",
+      "mergedBy": "mandelj7",
+      "mergeCommit": {
+        "oid": "b6a1149c4d7d485bdbcd155a69f38bbcfd57396b"
+      },
+      "comments": [
+        {
+          "author": "seanturner",
+          "authorAssociation": "OWNER",
+          "body": "Do we also need to add other algs to POPAlgs and WitnessAlgs, e.g.,\r\n\r\n    POPAlgs MAC-ALGORITHM ::= {\r\n       maca-hMAC-SHA1       |\r\n       maca-hMAC-SHA256     |\r\n       maca-hMAC-SHA384     |\r\n       maca-hMAC-SHA512     |\r\n       maca-hMAC-SHA512-224 |\r\n       maca-hMAC-SHA512-256 |\r\n       maca-hMAC-SHA3-224   |\r\n       maca-hMAC-SHA3-256   |\r\n       maca-hMAC-SHA3-384   |\r\n       maca-SHA3-512,\r\n        ... }\r\n\r\nand\r\n\r\n    WitnessAlgs DIGEST-ALGORITHM ::= {\r\n       mda-sha1       |\r\n       mda-sha256     |\r\n       mda-SHA384     |\r\n       mda-SHA512     |\r\n       mda-SHA512-224 |\r\n       mda-SHA512-256 |\r\n       mda-SHA3-224   |\r\n       mda-SHA3-256   |\r\n       mda-SHA3-384   |\r\n       mda-SHA3-512,\r\n        ...}",
+          "createdAt": "2023-12-20T03:50:45Z",
+          "updatedAt": "2023-12-20T03:50:45Z"
+        },
+        {
+          "author": "seanturner",
+          "authorAssociation": "OWNER",
+          "body": "We also probably need to define a new module for kda-PBKDF2 to include the HMAC algorithms.",
+          "createdAt": "2023-12-20T03:51:52Z",
+          "updatedAt": "2023-12-20T03:51:52Z"
+        }
+      ],
       "reviews": [
         {
           "id": "PRR_kwDOKfq5gM5lpJ6c",
