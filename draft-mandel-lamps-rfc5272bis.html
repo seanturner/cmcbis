@@ -7322,8 +7322,8 @@ POP exists for the certification request.<a href="#appendix-B.3-2" class="pilcro
                   encryptedContentInfo
                     eContentType = id-data
                     eContent = &lt;Encrypted value of 'y'&gt;
-              thePOPAlgID = HMAC-SHA1
-              witnessAlgID = SHA-1
+              thePOPAlgID = HMAC-SHA256
+              witnessAlgID = SHA-256
               witness &lt;hashed value of 'y'&gt;}}
            {106, id-cmc-dataReturn, &lt;packet of binary data identifying
                                      where the key in question is.&gt;}
@@ -7345,7 +7345,7 @@ POP exists for the certification request.<a href="#appendix-B.3-2" class="pilcro
            {105, id-cmc-recipientNonce, 10005}
            {107, id-cmc-decryptedPOP, {
              bodyPartID 201,
-             thePOPAlgID HMAC-SHA1,
+             thePOPAlgID HMAC-SHA256,
              thePOP &lt;HMAC computed value goes here&gt;}}
          reqSequence
            certRequest
