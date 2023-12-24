@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-21T01:15:33.576758+00:00",
+  "timestamp": "2023-12-24T01:19:57.592392+00:00",
   "repo": "seanturner/cmcbis",
   "labels": [
     {
@@ -87,15 +87,15 @@
       "id": "I_kwDOKfq5gM5zxHYI",
       "title": "527*: Replace SHA-1 and HMAC-SHA-1",
       "url": "https://github.com/seanturner/cmcbis/issues/6",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "seanturner",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "Update 5272*bis to remove defaults of SHA-1 and HMAC-SHA-1.",
       "createdAt": "2023-10-13T16:29:35Z",
-      "updatedAt": "2023-11-29T16:03:56Z",
-      "closedAt": null,
+      "updatedAt": "2023-12-21T02:20:44Z",
+      "closedAt": "2023-12-21T02:20:44Z",
       "comments": [
         {
           "author": "mandelj7",
@@ -142,15 +142,15 @@
       "id": "I_kwDOKfq5gM5z_B8K",
       "title": "5272: erratum7628",
       "url": "https://github.com/seanturner/cmcbis/issues/8",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "mandelj7",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2023-10-16T19:03:10Z",
-      "updatedAt": "2023-10-17T17:38:44Z",
-      "closedAt": null,
+      "updatedAt": "2023-12-21T21:45:02Z",
+      "closedAt": "2023-12-21T21:45:02Z",
       "comments": [
         {
           "author": "seanturner",
@@ -166,15 +166,15 @@
       "id": "I_kwDOKfq5gM5z_CDA",
       "title": "5272: erratum7629",
       "url": "https://github.com/seanturner/cmcbis/issues/9",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "mandelj7",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2023-10-16T19:03:28Z",
-      "updatedAt": "2023-10-17T17:39:08Z",
-      "closedAt": null,
+      "updatedAt": "2023-12-21T21:44:34Z",
+      "closedAt": "2023-12-21T21:44:34Z",
       "comments": [
         {
           "author": "seanturner",
@@ -1517,6 +1517,132 @@
       },
       "comments": [],
       "reviews": []
+    },
+    {
+      "number": 26,
+      "id": "PR_kwDOKfq5gM5ihs7k",
+      "title": "Update ASN.1 from RFC 6402 (#23)",
+      "url": "https://github.com/seanturner/cmcbis/pull/26",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Also Closes #6.",
+      "createdAt": "2023-12-21T02:19:41Z",
+      "updatedAt": "2023-12-21T02:20:43Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "418eaf9fe2e7cce63ba1a1f3b540dbbbb1fa687d",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "Update-ASN.1",
+      "headRefOid": "b6a1149c4d7d485bdbcd155a69f38bbcfd57396b",
+      "closedAt": "2023-12-21T02:20:43Z",
+      "mergedAt": "2023-12-21T02:20:43Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "4e2a0c22fdecc109fdd084b6649cf7a6cfe33875"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 27,
+      "id": "PR_kwDOKfq5gM5ihxsh",
+      "title": "SHA1 replacement in Section B.3",
+      "url": "https://github.com/seanturner/cmcbis/pull/27",
+      "state": "MERGED",
+      "author": "mandelj7",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-12-21T02:47:38Z",
+      "updatedAt": "2023-12-21T20:46:44Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "4e2a0c22fdecc109fdd084b6649cf7a6cfe33875",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "SHA1-replacement-in-Section-B.3",
+      "headRefOid": "135c36d31ec6d8522d6abf60859b22d85650e817",
+      "closedAt": "2023-12-21T20:46:44Z",
+      "mergedAt": "2023-12-21T20:46:44Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "3b3ae121c5884383532fdacd354ee69a32b36486"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 28,
+      "id": "PR_kwDOKfq5gM5ih2Ql",
+      "title": "Merge erratum 7629",
+      "url": "https://github.com/seanturner/cmcbis/pull/28",
+      "state": "MERGED",
+      "author": "mandelj7",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-12-21T03:20:49Z",
+      "updatedAt": "2023-12-21T21:44:33Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "4e2a0c22fdecc109fdd084b6649cf7a6cfe33875",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "Merge-erratum-7629",
+      "headRefOid": "1d38c648aa43abc0e3ffe6025ca04c41adcbfd5a",
+      "closedAt": "2023-12-21T21:44:33Z",
+      "mergedAt": "2023-12-21T21:44:33Z",
+      "mergedBy": "mandelj7",
+      "mergeCommit": {
+        "oid": "01faa6b1ea96e1d7a0eb8418725cce65c6dae564"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 29,
+      "id": "PR_kwDOKfq5gM5ih4VJ",
+      "title": "Merge-erratum-7628",
+      "url": "https://github.com/seanturner/cmcbis/pull/29",
+      "state": "MERGED",
+      "author": "mandelj7",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-12-21T03:35:53Z",
+      "updatedAt": "2023-12-21T21:22:55Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "Merge-erratum-7629",
+      "baseRefOid": "08e337fef64ec2f264cd84989bff57d12e928a73",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "Merge-erratum-7628",
+      "headRefOid": "f42a75daf00b8584319955518279ca1296034bf0",
+      "closedAt": "2023-12-21T21:22:55Z",
+      "mergedAt": "2023-12-21T21:22:55Z",
+      "mergedBy": "mandelj7",
+      "mergeCommit": {
+        "oid": "d6428e342aac8099fb9601e7955caf3554a06b8b"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKfq5gM5q6Q_r",
+          "commit": {
+            "abbreviatedOid": "f42a75d"
+          },
+          "author": "seanturner",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-12-21T20:52:00Z",
+          "updatedAt": "2023-12-21T20:52:00Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
