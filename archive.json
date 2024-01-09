@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-01-07T01:23:02.046846+00:00",
+  "timestamp": "2024-01-09T01:17:54.975234+00:00",
   "repo": "seanturner/cmcbis",
   "labels": [
     {
@@ -118,15 +118,15 @@
       "id": "I_kwDOKfq5gM5z_BtU",
       "title": "5272: erratum7379",
       "url": "https://github.com/seanturner/cmcbis/issues/7",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "mandelj7",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2023-10-16T19:02:27Z",
-      "updatedAt": "2023-10-17T17:38:17Z",
-      "closedAt": null,
+      "updatedAt": "2024-01-08T18:29:26Z",
+      "closedAt": "2024-01-08T18:29:26Z",
       "comments": [
         {
           "author": "seanturner",
@@ -268,15 +268,15 @@
       "id": "I_kwDOKfq5gM50Id-p",
       "title": "Fix tables in 5273",
       "url": "https://github.com/seanturner/cmcbis/issues/17",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "mandelj7",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Fix tables in section 2 and 3",
       "createdAt": "2023-10-17T22:16:58Z",
-      "updatedAt": "2023-10-28T16:22:45Z",
-      "closedAt": null,
+      "updatedAt": "2024-01-08T18:29:37Z",
+      "closedAt": "2024-01-08T18:29:37Z",
       "comments": []
     },
     {
@@ -1643,6 +1643,62 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 30,
+      "id": "PR_kwDOKfq5gM5jhEcL",
+      "title": "Fix updates section",
+      "url": "https://github.com/seanturner/cmcbis/pull/30",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-01-08T21:00:11Z",
+      "updatedAt": "2024-01-08T21:04:23Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "f1668d31607ee36bab40bfea57fa894c53b6d679",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "seanturner-update-updates-section",
+      "headRefOid": "b32da018a46a4a08277be8ecfadd8371e0050983",
+      "closedAt": "2024-01-08T21:04:23Z",
+      "mergedAt": "2024-01-08T21:04:23Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "7643cb46b176da43ffdba93d8e69a13437ea4c84"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 31,
+      "id": "PR_kwDOKfq5gM5jhFb-",
+      "title": "Update updates section",
+      "url": "https://github.com/seanturner/cmcbis/pull/31",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-01-08T21:03:51Z",
+      "updatedAt": "2024-01-08T21:04:37Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "f1668d31607ee36bab40bfea57fa894c53b6d679",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "seanturner-update-updates",
+      "headRefOid": "805499e439793c8d3d127f312b159202602b9474",
+      "closedAt": "2024-01-08T21:04:37Z",
+      "mergedAt": "2024-01-08T21:04:37Z",
+      "mergedBy": "seanturner",
+      "mergeCommit": {
+        "oid": "66707225cf6b2d1fee0b6d3a14794f9407dbada2"
+      },
+      "comments": [],
+      "reviews": []
     }
   ]
 }
