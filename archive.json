@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-02-11T01:16:45.807968+00:00",
+  "timestamp": "2024-02-13T01:12:13.910054+00:00",
   "repo": "seanturner/cmcbis",
   "labels": [
     {
@@ -309,6 +309,22 @@
       "createdAt": "2023-11-09T14:54:07Z",
       "updatedAt": "2023-11-17T23:33:03Z",
       "closedAt": "2023-11-17T23:33:03Z",
+      "comments": []
+    },
+    {
+      "number": 32,
+      "id": "I_kwDOKfq5gM5--2wH",
+      "title": "Add newer hmacs to PBKDF2-PRFs",
+      "url": "https://github.com/seanturner/cmcbis/issues/32",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "In [RFC 6402](https://www.rfc-editor.org/rfc/rfc6402#appendix-A.2),  defines kda-PBKDF2 for use with KeyDevAlgs, which is used in the PopLinkWitnessV2 control.  If you look at kda-PBKDF2, which is imported from [RFC 5911](https://datatracker.ietf.org/doc/html/rfc5911#section-3) only alg-hMAC-SHA1 is included. Obviously, we need to add additional algorithms there, so we need to update PBKDF2-PRFs to include additional algorithms.  We are proposing adding the following algorithms:\r\n\r\n    alg-hMAC-SHA224\r\n    alg-hMAC-SHA256\r\n    alg-hMAC-SHA384\r\n    alg-hMAC-SHA512\r\n    alg-hMAC-SHA512-224\r\n    alg-hMAC-SHA512-256\r\n\r\nThis requires a new module and probably adding \"updates 5911\" to the header.",
+      "createdAt": "2024-02-12T15:44:32Z",
+      "updatedAt": "2024-02-12T15:44:33Z",
+      "closedAt": null,
       "comments": []
     }
   ],
