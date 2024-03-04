@@ -78,15 +78,15 @@ Table of Contents
      5.1.  Cryptographic Algorithm Requirements
      5.2.  Controls
      5.3.  CRMF Feature Requirements
-     5.4.  Requirements for Clients
-   6.  Requirements for Servers
-   7.  Requirements for EEs
-   8.  Requirements for RAs
-   9.  Requirements for CAs
-   10. Security Considerations
-   11. References
-     11.1.  Normative References
-     11.2.  Informative References
+   6.  Requirements for Clients
+   7.  Requirements for Servers
+   8.  Requirements for EEs
+   9.  Requirements for RAs
+   10. Requirements for CAs
+   11. Security Considerations
+   12. References
+     12.1.  Normative References
+     12.2.  Informative References
    Acknowledgements
    Contributors
    Authors' Addresses
@@ -117,9 +117,9 @@ Table of Contents
    the RAs may be dependent on the content of the certificate requests
    involved.
 
-   This document is divided into five sections, each section specifying
+   This document is divided into six sections, each section specifying
    the requirements that are specific to a class of agents in the CMC
-   model.  These are 1) all agents, 2) all servers, 3) all clients, 4)
+   model.  These are 1) all Entities, 2) all Servers, 3) all Clients, 4)
    all End-Entities, 5) all Registration Authorities, 6) all
    Certification Authorities.
 
@@ -196,6 +196,10 @@ Table of Contents
    -02 version changes:
 
    *  Updated text in intro
+
+   *  Changed "all agents" to "all entities" in overview
+
+   *  Updated section header numbering
 
    -01 version changes:
 
@@ -424,22 +428,22 @@ Table of Contents
 
    The id-regCtrl-protocolEncrKey is not used.
 
-5.4.  Requirements for Clients
+6.  Requirements for Clients
 
    There are no additional requirements.
 
-6.  Requirements for Servers
+7.  Requirements for Servers
 
    There are no additional requirements.
 
-7.  Requirements for EEs
+8.  Requirements for EEs
 
    If an entity implements Diffie-Hellman, it MUST implement either the
    DH-POP Proof-of-Possession as defined in Section 4 of [DH-POP] or the
    challenge-response POP controls id-cmc-encryptedPOP and id-cmc-
    decryptedPOP.
 
-8.  Requirements for RAs
+9.  Requirements for RAs
 
    RAs SHOULD be able to do delegated POP.  RAs implementing this
    feature MUST implement the id-cmc-lraPOPWitness control.
@@ -447,7 +451,7 @@ Table of Contents
    All RAs MUST implement the promotion of the id-aa-cmc-unsignedData as
    covered in Section 3.2.3 of [CMC-STRUCT].
 
-9.  Requirements for CAs
+10.  Requirements for CAs
 
    Providing for CAs to work in an environment with RAs is strongly
    suggested.  Implementation of such support is strongly suggested as
@@ -470,7 +474,7 @@ Table of Contents
    in Section 4 of [DH-POP] and the challenge-response POP controls id-
    cmc-encryptedPOP and id-cmc-decryptedPOP.
 
-10.  Security Considerations
+11.  Security Considerations
 
    This document uses [CMC-STRUCT] and [CMC-TRANS] as building blocks to
    this document.  The security sections of those two documents are
@@ -488,9 +492,9 @@ Table of Contents
    current state of the art.  Two examples of such documents are
    [SMALL-SUB-GROUP] and [HASH-ATTACKS].
 
-11.  References
+12.  References
 
-11.1.  Normative References
+12.1.  Normative References
 
    [AES-WRAP] Schaad, J. and R. Housley, "Advanced Encryption Standard
               (AES) Key Wrap Algorithm", RFC 3394, DOI 10.17487/RFC3394,
@@ -569,7 +573,7 @@ Table of Contents
               DOI 10.17487/RFC4055, June 2005,
               <https://www.rfc-editor.org/rfc/rfc4055>.
 
-11.2.  Informative References
+12.2.  Informative References
 
    [CMC-COMPv1]
               Mandel, J. and S. Turner, "Certificate Management Messages
