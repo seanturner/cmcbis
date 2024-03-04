@@ -6,7 +6,7 @@ LAMPS Working Group                                        J. Mandel, Ed
 Internet-Draft                                              AKAYLA, Inc.
 Obsoletes: 5273, 6402 (if approved)                        S. Turner, Ed
 Intended status: Standards Track                                   sn3rd
-Expires: 11 July 2024                                     8 January 2024
+Expires: 5 September 2024                                   4 March 2024
 
 
        Certificate Management over CMS (CMC): Transport Protocols
@@ -51,7 +51,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 11 July 2024.
+   This Internet-Draft will expire on 5 September 2024.
 
 Copyright Notice
 
@@ -110,13 +110,19 @@ Table of Contents
       |  introduced by each version.  After WGLC, this section will be
       |  finalized.
 
-   TODO for -02:
+   TODO for -03:
 
-   *  Update TLS 1.0 text.
+   *  Consider AuthEnvelopedData
 
-   *  Consider AuthEnvelopedData.
+   -02 version changes:
 
-   -01 version changes: * Merged [erratum3593]
+   *  Replaced TLS 1.0 with TLS 1.2
+
+   -01 version changes:
+
+   *  Changed RFC 5272 references to draft-mandel-lamps-rfc5272bis
+
+   *  Merged [erratum3593]
 
    -00 version changes:
 
@@ -207,7 +213,7 @@ Table of Contents
 
    This section describes the conventions for use of HTTP [HTTP] as a
    transport layer.  In most circumstances, the use of HTTP over TLS
-   [TLS] provides any necessary content protection from eavesdroppers.
+   [HTTP] provides any necessary content protection from eavesdroppers.
 
    In order for CMC clients and servers using HTTP to interoperate, the
    following rules apply.
@@ -216,7 +222,7 @@ Table of Contents
 
       Servers MUST use the 200 response code for successful responses.
 
-      Clients MAY attempt to send HTTP requests using TLS 1.0 [TLS] or
+      Clients MAY attempt to send HTTP requests using TLS 1.2 [TLS] or
       later, although servers are not required to support TLS.
 
       Servers MUST NOT assume client support for any type of HTTP
@@ -332,9 +338,9 @@ Table of Contents
               <https://www.rfc-editor.org/errata/eid3593>.
 
    [HTTP]     Fielding, R., Ed., Nottingham, M., Ed., and J. Reschke,
-              Ed., "HTTP Caching", STD 98, RFC 9111,
-              DOI 10.17487/RFC9111, June 2022,
-              <https://www.rfc-editor.org/rfc/rfc9111>.
+              Ed., "HTTP Semantics", STD 97, RFC 9110,
+              DOI 10.17487/RFC9110, June 2022,
+              <https://www.rfc-editor.org/rfc/rfc9110>.
 
    [IPsec]    Kent, S. and K. Seo, "Security Architecture for the
               Internet Protocol", RFC 4301, DOI 10.17487/RFC4301,
@@ -359,20 +365,19 @@ Table of Contents
    [CMC-TRANSv1]
               Mandel, J. and S. Turner, "Certificate Management over CMS
               (CMC): Transport Protocols", Work in Progress, Internet-
-              Draft, draft-mandel-lamps-rfc5273bis-00, 13 October 2023,
+              Draft, draft-mandel-lamps-rfc5273bis-01, 8 January 2024,
               <https://datatracker.ietf.org/doc/html/draft-mandel-lamps-
-              rfc5273bis-00>.
+              rfc5273bis-01>.
 
    [CMC-Updates]
               Schaad, J., "Certificate Management over CMS (CMC)
               Updates", RFC 6402, DOI 10.17487/RFC6402, November 2011,
               <https://www.rfc-editor.org/rfc/rfc6402>.
 
-   [TLS]      Rescorla, E., "The Transport Layer Security (TLS) Protocol
-              Version 1.3", Work in Progress, Internet-Draft, draft-
-              ietf-tls-rfc8446bis-09, 7 July 2023,
-              <https://datatracker.ietf.org/doc/html/draft-ietf-tls-
-              rfc8446bis-09>.
+   [TLS]      Dierks, T. and E. Rescorla, "The Transport Layer Security
+              (TLS) Protocol Version 1.2", RFC 5246,
+              DOI 10.17487/RFC5246, August 2008,
+              <https://www.rfc-editor.org/rfc/rfc5246>.
 
 Acknowledgements
 

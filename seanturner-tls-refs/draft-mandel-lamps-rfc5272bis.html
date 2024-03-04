@@ -27,26 +27,26 @@ requirements usage document along with this document for a full
 definition. 
        This document obsoletes RFCs 5272 and 6402. 
     " name="description">
-<meta content="xml2rfc 3.19.0" name="generator">
+<meta content="xml2rfc 3.20.0" name="generator">
 <meta content="Public Key Infrastructure" name="keyword">
 <meta content="Certificate Management" name="keyword">
 <meta content="Cryptographic Message Syntax" name="keyword">
 <meta content="draft-mandel-lamps-rfc5272bis-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.19.0
-    Python 3.11.6
+  xml2rfc 3.20.0
+    Python 3.11.8
     ConfigArgParse 1.7
     google-i18n-address 3.1.0
     intervaltree 3.1.0
     Jinja2 3.1.2
     lxml 4.9.3
-    platformdirs 4.1.0
+    platformdirs 4.2.0
     pycountry 22.3.5
     PyYAML 6.0.1
     requests 2.31.0
     setuptools 68.2.2
     six 1.16.0
-    wcwidth 0.2.12
+    wcwidth 0.2.13
 -->
 <link href="draft-mandel-lamps-rfc5272bis.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -1045,11 +1045,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">CMC: Structures</td>
-<td class="right">December 2023</td>
+<td class="right">March 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Mandel, Ed &amp; Turner, Ed</td>
-<td class="center">Expires 22 June 2024</td>
+<td class="center">Expires 5 September 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1065,12 +1065,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc5272" class="eref">5272</a>, <a href="https://www.rfc-editor.org/rfc/rfc6402" class="eref">6402</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-12-20" class="published">20 December 2023</time>
+<time datetime="2024-03-04" class="published">4 March 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-06-22">22 June 2024</time></dd>
+<dd class="expires"><time datetime="2024-09-05">5 September 2024</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1141,7 +1141,7 @@ definition.<a href="#section-abstract-3" class="pilcrow">¶</a></p>
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 22 June 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 5 September 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1150,7 +1150,7 @@ definition.<a href="#section-abstract-3" class="pilcrow">¶</a></p>
 <a href="#name-copyright-notice" class="section-name selfRef">Copyright Notice</a>
         </h2>
 <p id="section-boilerplate.2-1">
-            Copyright (c) 2023 IETF Trust and the persons identified as the
+            Copyright (c) 2024 IETF Trust and the persons identified as the
             document authors. All rights reserved.<a href="#section-boilerplate.2-1" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.2-2">
             This document is subject to BCP 78 and the IETF Trust's Legal
@@ -1162,18 +1162,6 @@ definition.<a href="#section-abstract-3" class="pilcrow">¶</a></p>
             document must include Revised BSD License text as described in
             Section 4.e of the Trust Legal Provisions and are provided without
             warranty as described in the Revised BSD License.<a href="#section-boilerplate.2-2" class="pilcrow">¶</a></p>
-<p id="section-boilerplate.2-3">
-            This document may contain material from IETF Documents or IETF
-            Contributions published or made publicly available before November
-            10, 2008. The person(s) controlling the copyright in some of this
-            material may not have granted the IETF Trust the right to allow
-            modifications of such material outside the IETF Standards Process.
-            Without obtaining an adequate license from the person(s)
-            controlling the copyright in such materials, this document may not
-            be modified outside the IETF Standards Process, and derivative
-            works of it may not be created outside the IETF Standards Process,
-            except to format it for publication as an RFC or to translate it
-            into languages other than English.<a href="#section-boilerplate.2-3" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="toc">
@@ -1617,37 +1605,82 @@ rekey that previously was implicit.<a href="#section-1.4-7" class="pilcrow">¶</
           <p id="section-1.5-1.1">Note: For now, this section will be list of the changes introduced
   by each version. After WGLC, this section will be finalized.<a href="#section-1.5-1.1" class="pilcrow">¶</a></p>
 </aside>
-<p id="section-1.5-2">--02 todo:
-* Updates ASN.1 to use 2002 ASN.1 module baseed on <span>[<a href="#CMC-Updates" class="cite xref">CMC-Updates</a>]</span>
-* To support adopting SHA-256 and HMAC-SHA256:
-  * Add maca-hMAC-SHA256 to POPAlgs
-  * Add mda-sha256 to WitnessAlgs<a href="#section-1.5-2" class="pilcrow">¶</a></p>
-<p id="section-1.5-3">--01 todo:
-* Rework Section 1.3
-* Update CMC Control Attribute Table<a href="#section-1.5-3" class="pilcrow">¶</a></p>
-<p id="section-1.5-4">--01 version changes:
-* Changed RFC 5273 references to draft-mandel-lamps-rfc5273bis
-* Changed RFC 5274 references to draft-mandel-lamps-rfc5274bis
-* Added missing "OBJECT IDENTIFIER" to declarations throughout mainbody
-  to match ASN.1 module
-* Merged <span>[<a href="#erratum2731" class="cite xref">erratum2731</a>]</span>
-* Merged <span>[<a href="#erratum4775" class="cite xref">erratum4775</a>]</span><a href="#section-1.5-4" class="pilcrow">¶</a></p>
-<p id="section-1.5-5">--00 version changes:<a href="#section-1.5-5" class="pilcrow">¶</a></p>
+<p id="section-1.5-2">--02 todo:<a href="#section-1.5-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-1.5-6.1">
-            <p id="section-1.5-6.1.1">Added "Updates Made by RFC 6402" section<a href="#section-1.5-6.1.1" class="pilcrow">¶</a></p>
+<li class="normal" id="section-1.5-3.1">
+            <p id="section-1.5-3.1.1">Address management of KEM certificate<a href="#section-1.5-3.1.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="normal" id="section-1.5-6.2">
-            <p id="section-1.5-6.2.1">Merged <span>[<a href="#CMC-Updates" class="cite xref">CMC-Updates</a>]</span> text<a href="#section-1.5-6.2.1" class="pilcrow">¶</a></p>
+          <li class="normal" id="section-1.5-3.2">
+            <p id="section-1.5-3.2.1">Add module to support PBKDF2<a href="#section-1.5-3.2.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="normal" id="section-1.5-6.3">
-            <p id="section-1.5-6.3.1">Merged <span>[<a href="#erratum2063" class="cite xref">erratum2063</a>]</span><a href="#section-1.5-6.3.1" class="pilcrow">¶</a></p>
+        </ul>
+<p id="section-1.5-4">--01 version changes:<a href="#section-1.5-4" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-1.5-5.1">
+            <p id="section-1.5-5.1.1">Changed RFC 5273 references to draft-mandel-lamps-rfc5273bis<a href="#section-1.5-5.1.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="normal" id="section-1.5-6.4">
-            <p id="section-1.5-6.4.1">Merged <span>[<a href="#erratum7627" class="cite xref">erratum7627</a>]</span><a href="#section-1.5-6.4.1" class="pilcrow">¶</a></p>
+          <li class="normal" id="section-1.5-5.2">
+            <p id="section-1.5-5.2.1">Changed RFC 5274 references to draft-mandel-lamps-rfc5274bis<a href="#section-1.5-5.2.1" class="pilcrow">¶</a></p>
 </li>
-          <li class="normal" id="section-1.5-6.5">
-            <p id="section-1.5-6.5.1">Updated and moved Acknowledgments<a href="#section-1.5-6.5.1" class="pilcrow">¶</a></p>
+          <li class="normal" id="section-1.5-5.3">
+            <p id="section-1.5-5.3.1">Added missing "OBJECT IDENTIFIER" to declarations throughout mainbody
+to match ASN.1 module<a href="#section-1.5-5.3.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-5.4">
+            <p id="section-1.5-5.4.1">Rework Section 1.3<a href="#section-1.5-5.4.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-5.5">
+            <p id="section-1.5-5.5.1">Update CMC Control Attribute Table<a href="#section-1.5-5.5.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-5.6">
+            <p id="section-1.5-5.6.1">Updates ASN.1 to use 2002 ASN.1 module baseed on <span>[<a href="#CMC-Updates" class="cite xref">CMC-Updates</a>]</span><a href="#section-1.5-5.6.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-5.7">
+            <p id="section-1.5-5.7.1">To support adopting SHA-256 and HMAC-SHA256:<a href="#section-1.5-5.7.1" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-1.5-5.7.2.1">
+                <p id="section-1.5-5.7.2.1.1">Add maca-hMAC-SHA256 to POPAlgs<a href="#section-1.5-5.7.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="normal" id="section-1.5-5.7.2.2">
+                <p id="section-1.5-5.7.2.2.1">Add mda-sha256 to WitnessAlgs<a href="#section-1.5-5.7.2.2.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="normal" id="section-1.5-5.7.2.3">
+                <p id="section-1.5-5.7.2.3.1">Add maca-hMAC-SHA256 and mda-sha256 to example in Appendix B<a href="#section-1.5-5.7.2.3.1" class="pilcrow">¶</a></p>
+</li>
+            </ul>
+</li>
+          <li class="normal" id="section-1.5-5.8">
+            <p id="section-1.5-5.8.1">Merged <span>[<a href="#erratum2731" class="cite xref">erratum2731</a>]</span><a href="#section-1.5-5.8.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-5.9">
+            <p id="section-1.5-5.9.1">Merged <span>[<a href="#erratum4775" class="cite xref">erratum4775</a>]</span><a href="#section-1.5-5.9.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-5.10">
+            <p id="section-1.5-5.10.1">Mereged <span>[<a href="#erratum7379" class="cite xref">erratum7379</a>]</span><a href="#section-1.5-5.10.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-5.11">
+            <p id="section-1.5-5.11.1">Merged <span>[<a href="#erratum7628" class="cite xref">erratum7628</a>]</span><a href="#section-1.5-5.11.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-5.12">
+            <p id="section-1.5-5.12.1">Merged <span>[<a href="#erratum7629" class="cite xref">erratum7629</a>]</span><a href="#section-1.5-5.12.1" class="pilcrow">¶</a></p>
+</li>
+        </ul>
+<p id="section-1.5-6">--00 version changes:<a href="#section-1.5-6" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-1.5-7.1">
+            <p id="section-1.5-7.1.1">Added "Updates Made by RFC 6402" section<a href="#section-1.5-7.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-7.2">
+            <p id="section-1.5-7.2.1">Merged <span>[<a href="#CMC-Updates" class="cite xref">CMC-Updates</a>]</span> text<a href="#section-1.5-7.2.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-7.3">
+            <p id="section-1.5-7.3.1">Merged <span>[<a href="#erratum2063" class="cite xref">erratum2063</a>]</span><a href="#section-1.5-7.3.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-7.4">
+            <p id="section-1.5-7.4.1">Merged <span>[<a href="#erratum7627" class="cite xref">erratum7627</a>]</span><a href="#section-1.5-7.4.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="normal" id="section-1.5-7.5">
+            <p id="section-1.5-7.5.1">Updated and moved Acknowledgments<a href="#section-1.5-7.5.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
 </section>
@@ -2697,7 +2730,8 @@ client or no certificate exists for a signing key.<a href="#section-3.2.1.3.1-2"
 <ul class="normal ulEmpty">
 <li class="normal ulEmpty" id="section-3.2.1.3.1-5.1">
                   <p id="section-3.2.1.3.1-5.1.1">The top-level wrapper in environments where an encryption-only key
-  is being certified.<a href="#section-3.2.1.3.1-5.1.1" class="pilcrow">¶</a></p>
+  is being certified or where a shared-secret exists, but a PKI-based
+  trust (needed for SignedData) has not yet been established.<a href="#section-3.2.1.3.1-5.1.1" class="pilcrow">¶</a></p>
 </li>
               </ul>
 <p id="section-3.2.1.3.1-6">This content type can include both PKIData and PKIResponse as the
@@ -2763,8 +2797,15 @@ returned using a <code>CMCFailInfo</code> with a value of <code>badMessageCheck<
 <p id="section-3.2.1.3.4-6">For the PKI Response, <code>SignedData</code> allows the server to sign the
 returning data, if any exists, and to carry the certificates and CRLs
 corresponding to the PKI Request. If no data is being returned
-beyond the certificates and CRLs, the <code>EncapsulatedInfo</code> and <code>SignerInfo</code>
-fields are not populated.<a href="#section-3.2.1.3.4-6" class="pilcrow">¶</a></p>
+beyond the certificates and CRLs, there is no 'eContent' field in the
+'EncapsulatedContentInfo' and no 'SignerInfo'.<a href="#section-3.2.1.3.4-6" class="pilcrow">¶</a></p>
+<p id="section-3.2.1.3.4-7">Only if the server is unable to sign the response (and unable to use
+any <code>RecipientInfo</code> options of the <code>AuthenticatedData</code> content type),
+and at the same time it should send a negative response,
+Full PKI Response <code>SignedData</code> type containing a CMC Status Info control
+<span class="bcp14">MUST</span> be returned using a <code>CMCFailInfo</code> with a value of internalCAError and
+a <code>bodyPartID</code> of 0, and the eContent field in the <code>EncapsulatedContentInfo</code>
+as well as <code>SignerInfo</code> fields <span class="bcp14">MUST</span> not be populated.<a href="#section-3.2.1.3.4-7" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -6360,7 +6401,7 @@ updates.<a href="#section-11-1" class="pilcrow">¶</a></p>
 <dl class="references">
 <dt id="CMC-COMPL">[CMC-COMPL]</dt>
         <dd>
-<span class="refAuthor">Mandel, J.</span> and <span class="refAuthor">S. Turner</span>, <span class="refTitle">"Certificate Management Messages over CMS (CMC): Compliance Requirements"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-mandel-lamps-rfc5274bis-00</span>, <time datetime="2023-10-13" class="refDate">13 October 2023</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-mandel-lamps-rfc5274bis-00">https://datatracker.ietf.org/doc/html/draft-mandel-lamps-rfc5274bis-00</a>&gt;</span>. </dd>
+<span class="refAuthor">Mandel, J.</span> and <span class="refAuthor">S. Turner</span>, <span class="refTitle">"Certificate Management Messages over CMS (CMC): Compliance Requirements"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-mandel-lamps-rfc5274bis-01</span>, <time datetime="2024-01-08" class="refDate">8 January 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-mandel-lamps-rfc5274bis-01">https://datatracker.ietf.org/doc/html/draft-mandel-lamps-rfc5274bis-01</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="CMC-PROTv1">[CMC-PROTv1]</dt>
         <dd>
@@ -6368,7 +6409,7 @@ updates.<a href="#section-11-1" class="pilcrow">¶</a></p>
 <dd class="break"></dd>
 <dt id="CMC-TRANS">[CMC-TRANS]</dt>
         <dd>
-<span class="refAuthor">Mandel, J.</span> and <span class="refAuthor">S. Turner</span>, <span class="refTitle">"Certificate Management over CMS (CMC): Transport Protocols"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-mandel-lamps-rfc5273bis-00</span>, <time datetime="2023-10-13" class="refDate">13 October 2023</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-mandel-lamps-rfc5273bis-00">https://datatracker.ietf.org/doc/html/draft-mandel-lamps-rfc5273bis-00</a>&gt;</span>. </dd>
+<span class="refAuthor">Mandel, J.</span> and <span class="refAuthor">S. Turner</span>, <span class="refTitle">"Certificate Management over CMS (CMC): Transport Protocols"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-mandel-lamps-rfc5273bis-01</span>, <time datetime="2024-01-08" class="refDate">8 January 2024</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-mandel-lamps-rfc5273bis-01">https://datatracker.ietf.org/doc/html/draft-mandel-lamps-rfc5273bis-01</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="CMC-Updates">[CMC-Updates]</dt>
         <dd>
@@ -6386,9 +6427,21 @@ updates.<a href="#section-11-1" class="pilcrow">¶</a></p>
         <dd>
 <span class="refTitle">"RFC 5272 erratum 4775"</span>, <time datetime="2016-08-11" class="refDate">11 August 2016</time>, <span>&lt;<a href="https://www.rfc-editor.org/errata/eid4775">https://www.rfc-editor.org/errata/eid4775</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="erratum7379">[erratum7379]</dt>
+        <dd>
+<span class="refTitle">"RFC 5272 erratum 7379"</span>, <time datetime="2023-03-08" class="refDate">8 March 2023</time>, <span>&lt;<a href="https://www.rfc-editor.org/errata/eid7379">https://www.rfc-editor.org/errata/eid7379</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="erratum7627">[erratum7627]</dt>
         <dd>
 <span class="refTitle">"RFC 5272 erratum 7627"</span>, <time datetime="2023-09-04" class="refDate">4 September 2023</time>, <span>&lt;<a href="https://www.rfc-editor.org/errata/eid7627">https://www.rfc-editor.org/errata/eid7627</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="erratum7628">[erratum7628]</dt>
+        <dd>
+<span class="refTitle">"RFC 5272 erratum 7628"</span>, <time datetime="2023-09-04" class="refDate">4 September 2023</time>, <span>&lt;<a href="https://www.rfc-editor.org/errata/eid7628">https://www.rfc-editor.org/errata/eid7628</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="erratum7629">[erratum7629]</dt>
+        <dd>
+<span class="refTitle">"RFC 5272 erratum 7629"</span>, <time datetime="2023-09-04" class="refDate">4 September 2023</time>, <span>&lt;<a href="https://www.rfc-editor.org/errata/eid7629">https://www.rfc-editor.org/errata/eid7629</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="PASSWORD">[PASSWORD]</dt>
         <dd>
@@ -7316,8 +7369,8 @@ POP exists for the certification request.<a href="#appendix-B.3-2" class="pilcro
                   encryptedContentInfo
                     eContentType = id-data
                     eContent = &lt;Encrypted value of 'y'&gt;
-              thePOPAlgID = HMAC-SHA1
-              witnessAlgID = SHA-1
+              thePOPAlgID = HMAC-SHA256
+              witnessAlgID = SHA-256
               witness &lt;hashed value of 'y'&gt;}}
            {106, id-cmc-dataReturn, &lt;packet of binary data identifying
                                      where the key in question is.&gt;}
@@ -7339,7 +7392,7 @@ POP exists for the certification request.<a href="#appendix-B.3-2" class="pilcro
            {105, id-cmc-recipientNonce, 10005}
            {107, id-cmc-decryptedPOP, {
              bodyPartID 201,
-             thePOPAlgID HMAC-SHA1,
+             thePOPAlgID HMAC-SHA256,
              thePOP &lt;HMAC computed value goes here&gt;}}
          reqSequence
            certRequest

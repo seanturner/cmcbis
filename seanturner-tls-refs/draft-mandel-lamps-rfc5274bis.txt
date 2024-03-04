@@ -6,7 +6,7 @@ LAMPS Working Group                                        J. Mandel, Ed
 Internet-Draft                                              AKAYLA, Inc.
 Obsoletes: 5274, 6402 (if approved)                        S. Turner, Ed
 Intended status: Standards Track                                   sn3rd
-Expires: 11 July 2024                                     8 January 2024
+Expires: 5 September 2024                                   4 March 2024
 
 
 Certificate Management Messages over CMS (CMC): Compliance Requirements
@@ -52,7 +52,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 11 July 2024.
+   This Internet-Draft will expire on 5 September 2024.
 
 Copyright Notice
 
@@ -189,7 +189,7 @@ Table of Contents
       |  introduced by each version.  After WGLC, this section will be
       |  finalized.
 
-   TODO for -01:
+   TODO for -02:
 
    *  Update TLS text
 
@@ -199,7 +199,11 @@ Table of Contents
 
    *  Make sure section count in s1 is correct
 
-   *  Update references to 5272bis and 5273bis
+   -01 version changes:
+
+   *  Changed RFC 5272 references to draft-mandel-lamps-rfc5272bis
+
+   *  Changed RFC 5273 references to draft-mandel-lamps-rfc5273bis
 
    -00 version changes:
 
@@ -504,9 +508,9 @@ Table of Contents
    [CMC-TRANS]
               Mandel, J. and S. Turner, "Certificate Management over CMS
               (CMC): Transport Protocols", Work in Progress, Internet-
-              Draft, draft-mandel-lamps-rfc5273bis-00, 13 October 2023,
+              Draft, draft-mandel-lamps-rfc5273bis-01, 8 January 2024,
               <https://datatracker.ietf.org/doc/html/draft-mandel-lamps-
-              rfc5273bis-00>.
+              rfc5273bis-01>.
 
    [CMS]      Housley, R., "Cryptographic Message Syntax (CMS)", STD 70,
               RFC 5652, DOI 10.17487/RFC5652, September 2009,
@@ -573,9 +577,9 @@ Table of Contents
               Mandel, J. and S. Turner, "Certificate Management Messages
               over CMS (CMC): Compliance Requirements", Work in
               Progress, Internet-Draft, draft-mandel-lamps-rfc5274bis-
-              00, 13 October 2023,
+              01, 8 January 2024,
               <https://datatracker.ietf.org/doc/html/draft-mandel-lamps-
-              rfc5274bis-00>.
+              rfc5274bis-01>.
 
    [CMC-Updates]
               Schaad, J., "Certificate Management over CMS (CMC)
