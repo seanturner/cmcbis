@@ -156,7 +156,7 @@ Table of Contents
      12.2.  Informative References
    Appendix A.  ASN.1 Modules
      A.1.  ASN.1 Module for CMC
-     A.2.  ASN.1 Module for PBDKF2 PRFs
+     A.2.  ASN.1 Module for PBKDF2 PRFs
    Appendix B.  Enrollment Message Flows
      B.1.  Request of a Signing Certificate
      B.2.  Single Certification Request, But Modified by RA
@@ -4135,7 +4135,7 @@ ContentInfo, IssuerAndSerialNumber, CONTENT-TYPE
 
  END
 
-A.2.  ASN.1 Module for PBDKF2 PRFs
+A.2.  ASN.1 Module for PBKDF2 PRFs
 
    The module contained in this appendix extends the PBKDF2-PRFs
    algorithm set defined in Section 3 of [CMS-ALGS].  Apply this
