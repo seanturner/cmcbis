@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-03-03T01:14:57.426484+00:00",
+  "timestamp": "2024-03-05T01:11:01.752357+00:00",
   "repo": "seanturner/cmcbis",
   "labels": [
     {
@@ -284,15 +284,15 @@
       "id": "I_kwDOKfq5gM50rqxp",
       "title": "5273: Fix HTTP references",
       "url": "https://github.com/seanturner/cmcbis/issues/21",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "seanturner",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "HTTP references need to be updated.",
       "createdAt": "2023-10-23T16:57:22Z",
-      "updatedAt": "2023-10-23T16:57:22Z",
-      "closedAt": null,
+      "updatedAt": "2024-03-04T16:00:58Z",
+      "closedAt": "2024-03-04T16:00:57Z",
       "comments": []
     },
     {
@@ -316,14 +316,46 @@
       "id": "I_kwDOKfq5gM5--2wH",
       "title": "Add newer hmacs to PBKDF2-PRFs",
       "url": "https://github.com/seanturner/cmcbis/issues/32",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "seanturner",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "In [RFC 6402](https://www.rfc-editor.org/rfc/rfc6402#appendix-A.2),  defines kda-PBKDF2 for use with KeyDevAlgs, which is used in the PopLinkWitnessV2 control.  If you look at kda-PBKDF2, which is imported from [RFC 5911](https://datatracker.ietf.org/doc/html/rfc5911#section-3) only alg-hMAC-SHA1 is included. Obviously, we need to add additional algorithms there, so we need to update PBKDF2-PRFs to include additional algorithms.  We are proposing adding the following algorithms:\r\n\r\n    alg-hMAC-SHA224\r\n    alg-hMAC-SHA256\r\n    alg-hMAC-SHA384\r\n    alg-hMAC-SHA512\r\n    alg-hMAC-SHA512-224\r\n    alg-hMAC-SHA512-256\r\n\r\nThis requires a new module and probably adding \"updates 5911\" to the header.",
       "createdAt": "2024-02-12T15:44:32Z",
-      "updatedAt": "2024-02-12T15:44:33Z",
+      "updatedAt": "2024-03-04T19:42:13Z",
+      "closedAt": "2024-03-04T19:42:13Z",
+      "comments": []
+    },
+    {
+      "number": 37,
+      "id": "I_kwDOKfq5gM6BGCJs",
+      "title": "5274: Update cryptographic requirements",
+      "url": "https://github.com/seanturner/cmcbis/issues/37",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Update cryptographic algorithm requirements.",
+      "createdAt": "2024-03-04T03:24:32Z",
+      "updatedAt": "2024-03-04T03:24:32Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 38,
+      "id": "I_kwDOKfq5gM6BGCwl",
+      "title": "5273: Adopt management of KEM certificates",
+      "url": "https://github.com/seanturner/cmcbis/issues/38",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Look to what CMP is doing to manage KEM certificates.",
+      "createdAt": "2024-03-04T03:27:33Z",
+      "updatedAt": "2024-03-04T03:27:33Z",
       "closedAt": null,
       "comments": []
     }
@@ -1715,6 +1747,200 @@
       },
       "comments": [],
       "reviews": []
+    },
+    {
+      "number": 33,
+      "id": "PR_kwDOKfq5gM5oiFry",
+      "title": "Tweak TLS text",
+      "url": "https://github.com/seanturner/cmcbis/pull/33",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #21.",
+      "createdAt": "2024-03-04T02:21:09Z",
+      "updatedAt": "2024-03-04T16:00:57Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "66707225cf6b2d1fee0b6d3a14794f9407dbada2",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "seanturner-tls-refs",
+      "headRefOid": "4a8312c3fcd4f903a5a4662b7145ce8c02f87d7d",
+      "closedAt": "2024-03-04T16:00:56Z",
+      "mergedAt": "2024-03-04T16:00:56Z",
+      "mergedBy": "mandelj7",
+      "mergeCommit": {
+        "oid": "67d2be07aca9c80e0e6727bbc0bbcfb19c3449a9"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 34,
+      "id": "PR_kwDOKfq5gM5oiHwh",
+      "title": "Minor tweaks",
+      "url": "https://github.com/seanturner/cmcbis/pull/34",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Minor updates.",
+      "createdAt": "2024-03-04T02:32:40Z",
+      "updatedAt": "2024-03-04T19:43:39Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "66707225cf6b2d1fee0b6d3a14794f9407dbada2",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "seanturner-minor",
+      "headRefOid": "93ef41e35cd6abc8b7e2bc78b550c909945aefde",
+      "closedAt": "2024-03-04T19:43:33Z",
+      "mergedAt": "2024-03-04T19:43:33Z",
+      "mergedBy": "mandelj7",
+      "mergeCommit": {
+        "oid": "ef0cc0e16fcf9317e458578f24e51b5d27cadc93"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKfq5gM5yI8_s",
+          "commit": {
+            "abbreviatedOid": "93ef41e"
+          },
+          "author": "mandelj7",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "Made some minor changes.",
+          "createdAt": "2024-03-04T17:54:36Z",
+          "updatedAt": "2024-03-04T17:54:36Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 35,
+      "id": "PR_kwDOKfq5gM5oiSRd",
+      "title": "Add HMAC algs to PBKDF2",
+      "url": "https://github.com/seanturner/cmcbis/pull/35",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Closes #32.",
+      "createdAt": "2024-03-04T03:11:12Z",
+      "updatedAt": "2024-03-04T19:42:15Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "66707225cf6b2d1fee0b6d3a14794f9407dbada2",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "seanturner-pbkdf-algs",
+      "headRefOid": "ade6ddac384b91ad7d13121fd289c1965e81ccc3",
+      "closedAt": "2024-03-04T19:42:12Z",
+      "mergedAt": "2024-03-04T19:42:12Z",
+      "mergedBy": "mandelj7",
+      "mergeCommit": {
+        "oid": "be79910af2542eef718ae0136170fa7dde5ecacd"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKfq5gM5yCs3n",
+          "commit": {
+            "abbreviatedOid": "f3b70d9"
+          },
+          "author": "seanturner",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-03-04T03:12:15Z",
+          "updatedAt": "2024-03-04T03:12:15Z",
+          "comments": [
+            {
+              "originalPosition": 82,
+              "body": "```suggestion\r\n    smime(16) modules(0) id-mod-pbkdf2-prfs(TBD) }\r\n```",
+              "createdAt": "2024-03-04T03:12:15Z",
+              "updatedAt": "2024-03-04T03:12:15Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKfq5gM5yCuCy",
+          "commit": {
+            "abbreviatedOid": "1b7474e"
+          },
+          "author": "seanturner",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-03-04T03:20:57Z",
+          "updatedAt": "2024-03-04T03:20:57Z",
+          "comments": [
+            {
+              "originalPosition": 76,
+              "body": "```suggestion\r\nset defined in {{Section 3 of CMS-ALGS}}. Apply this extension prior to\r\n```",
+              "createdAt": "2024-03-04T03:20:57Z",
+              "updatedAt": "2024-03-04T03:20:57Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKfq5gM5yI8o3",
+          "commit": {
+            "abbreviatedOid": "ade6dda"
+          },
+          "author": "mandelj7",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-03-04T17:53:47Z",
+          "updatedAt": "2024-03-04T17:53:47Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "id": "PR_kwDOKfq5gM5oiUJR",
+      "title": "ASN.1 spacing nits",
+      "url": "https://github.com/seanturner/cmcbis/pull/36",
+      "state": "MERGED",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Fixed some ASN.1 spacing issues.",
+      "createdAt": "2024-03-04T03:22:01Z",
+      "updatedAt": "2024-03-04T19:41:23Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "66707225cf6b2d1fee0b6d3a14794f9407dbada2",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "seanturner-asn1-spacing",
+      "headRefOid": "88679a7f913b6e886829db65c84bf4f183f629e3",
+      "closedAt": "2024-03-04T19:41:05Z",
+      "mergedAt": "2024-03-04T19:41:05Z",
+      "mergedBy": "mandelj7",
+      "mergeCommit": {
+        "oid": "87cd46105efc896cdfb74052650d07f5290a6ef1"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKfq5gM5yJzga",
+          "commit": {
+            "abbreviatedOid": "88679a7"
+          },
+          "author": "mandelj7",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-03-04T19:27:46Z",
+          "updatedAt": "2024-03-04T19:27:46Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
