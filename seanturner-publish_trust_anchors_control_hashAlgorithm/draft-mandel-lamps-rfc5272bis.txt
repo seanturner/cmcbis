@@ -6,8 +6,8 @@ Limited Additional Mechanisms for PKIX and SMIME           J. Mandel, Ed
 Internet-Draft                                              AKAYLA, Inc.
 Obsoletes: 5272, 6402 (if approved)                        S. Turner, Ed
 Updates: 5911 (if approved)                                        sn3rd
-Intended status: Standards Track                            4 March 2024
-Expires: 5 September 2024
+Intended status: Standards Track                           10 April 2024
+Expires: 12 October 2024
 
 
                  Certificate Management over CMS (CMC)
@@ -67,7 +67,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 September 2024.
+   This Internet-Draft will expire on 12 October 2024.
 
 Copyright Notice
 
@@ -293,6 +293,10 @@ Table of Contents
    --03 todo:
 
    *  Address management of KEM certificate
+
+   --03 version changes:
+
+   *  Publish Trust Anchors Control hashAlgorithm changed to SHA-256
 
    --02 version changes:
 
@@ -2729,7 +2733,7 @@ Table of Contents
 
       hashAlgorithm is the identifier and parameters for the hash
          algorithm that is used in computing the values of the
-         anchorHashes field.  All implementations MUST implement SHA-1
+         anchorHashes field.  All implementations MUST implement SHA-256
          for this field.
 
       anchorHashes are the hashes for the certificates that are to be
@@ -3427,9 +3431,8 @@ Table of Contents
               Mandel, J. and S. Turner, "Certificate Management Messages
               over CMS (CMC): Compliance Requirements", Work in
               Progress, Internet-Draft, draft-mandel-lamps-rfc5274bis-
-              01, 8 January 2024,
-              <https://datatracker.ietf.org/doc/html/draft-mandel-lamps-
-              rfc5274bis-01>.
+              02, 4 March 2024, <https://datatracker.ietf.org/doc/html/
+              draft-mandel-lamps-rfc5274bis-02>.
 
    [CMC-PROTv1]
               Schaad, J. and M. Myers, "Certificate Management over CMS
@@ -3439,9 +3442,9 @@ Table of Contents
    [CMC-TRANS]
               Mandel, J. and S. Turner, "Certificate Management over CMS
               (CMC): Transport Protocols", Work in Progress, Internet-
-              Draft, draft-mandel-lamps-rfc5273bis-01, 8 January 2024,
+              Draft, draft-mandel-lamps-rfc5273bis-02, 4 March 2024,
               <https://datatracker.ietf.org/doc/html/draft-mandel-lamps-
-              rfc5273bis-01>.
+              rfc5273bis-02>.
 
    [CMC-Updates]
               Schaad, J., "Certificate Management over CMS (CMC)
