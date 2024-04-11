@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-09T01:13:37.591507+00:00",
+  "timestamp": "2024-04-11T01:14:17.460871+00:00",
   "repo": "seanturner/cmcbis",
   "labels": [
     {
@@ -356,6 +356,46 @@
       "body": "Look to what CMP is doing to manage KEM certificates.",
       "createdAt": "2024-03-04T03:27:33Z",
       "updatedAt": "2024-03-04T03:27:33Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 39,
+      "id": "I_kwDOKfq5gM6FSDc1",
+      "title": "5272: Need Publish Trust Anchors Control v2",
+      "url": "https://github.com/seanturner/cmcbis/issues/39",
+      "state": "CLOSED",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Publish Trust Anchors Control requires SHA-1 as the hash algorithm.  Need to define v2 for the control that allows other algorithms.",
+      "createdAt": "2024-04-10T17:31:22Z",
+      "updatedAt": "2024-04-10T17:39:36Z",
+      "closedAt": "2024-04-10T17:39:36Z",
+      "comments": [
+        {
+          "author": "seanturner",
+          "authorAssociation": "OWNER",
+          "body": "Ah .... we don't need a new control, we can just change the requirement.",
+          "createdAt": "2024-04-10T17:39:26Z",
+          "updatedAt": "2024-04-10T17:39:26Z"
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "id": "I_kwDOKfq5gM6FSJnO",
+      "title": "5272: Update Publish Trust Anchors Control hash algorithm",
+      "url": "https://github.com/seanturner/cmcbis/issues/40",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Currently it says SHA-1, change to SHA-256.",
+      "createdAt": "2024-04-10T17:48:20Z",
+      "updatedAt": "2024-04-10T17:48:20Z",
       "closedAt": null,
       "comments": []
     }
@@ -1941,6 +1981,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 41,
+      "id": "PR_kwDOKfq5gM5sRoSb",
+      "title": "Publish Trust Anchors Control hashAlgorithm change",
+      "url": "https://github.com/seanturner/cmcbis/pull/41",
+      "state": "OPEN",
+      "author": "seanturner",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Changed Publish Trust Anchors Control hashAlgorithm to SHA-256.\r\n\r\nCloses #40.",
+      "createdAt": "2024-04-10T17:56:30Z",
+      "updatedAt": "2024-04-10T17:56:31Z",
+      "baseRepository": "seanturner/cmcbis",
+      "baseRefName": "main",
+      "baseRefOid": "e8b382e3d337482491d4a400a4ac5ddf6e9ef04f",
+      "headRepository": "seanturner/cmcbis",
+      "headRefName": "seanturner-publish_trust_anchors_control_hashAlgorithm",
+      "headRefOid": "935987ae2acab007cb48ac148174e77fed38588f",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
