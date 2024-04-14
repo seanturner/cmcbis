@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-11T01:14:17.460871+00:00",
+  "timestamp": "2024-04-14T01:10:42.637025+00:00",
   "repo": "seanturner/cmcbis",
   "labels": [
     {
@@ -396,6 +396,22 @@
       "body": "Currently it says SHA-1, change to SHA-256.",
       "createdAt": "2024-04-10T17:48:20Z",
       "updatedAt": "2024-04-10T17:48:20Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 42,
+      "id": "I_kwDOKfq5gM6Fnxne",
+      "title": "DH PoP Alg References - 2875 to 6955",
+      "url": "https://github.com/seanturner/cmcbis/issues/42",
+      "state": "OPEN",
+      "author": "mandelj7",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Update the references from RFC 2875 to 6955 in 5272bis",
+      "createdAt": "2024-04-13T22:05:51Z",
+      "updatedAt": "2024-04-13T22:05:51Z",
       "closedAt": null,
       "comments": []
     }
@@ -1994,7 +2010,7 @@
       "labels": [],
       "body": "Changed Publish Trust Anchors Control hashAlgorithm to SHA-256.\r\n\r\nCloses #40.",
       "createdAt": "2024-04-10T17:56:30Z",
-      "updatedAt": "2024-04-10T17:56:31Z",
+      "updatedAt": "2024-04-13T22:06:37Z",
       "baseRepository": "seanturner/cmcbis",
       "baseRefName": "main",
       "baseRefOid": "e8b382e3d337482491d4a400a4ac5ddf6e9ef04f",
@@ -2006,7 +2022,21 @@
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOKfq5gM53K-pl",
+          "commit": {
+            "abbreviatedOid": "935987a"
+          },
+          "author": "mandelj7",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-04-13T22:06:37Z",
+          "updatedAt": "2024-04-13T22:06:37Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
