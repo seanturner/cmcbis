@@ -2735,7 +2735,7 @@ Table of Contents
 
       hashAlgorithm is the identifier and parameters for the hash
          algorithm that is used in computing the values of the
-         anchorHashes field.  All implementations MUST implement SHA-1
+         anchorHashes field.  All implementations MUST implement SHA-256
          for this field.
 
       anchorHashes are the hashes for the certificates that are to be
