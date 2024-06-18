@@ -6,8 +6,8 @@ Limited Additional Mechanisms for PKIX and SMIME           J. Mandel, Ed
 Internet-Draft                                              AKAYLA, Inc.
 Obsoletes: 5272, 6402 (if approved)                        S. Turner, Ed
 Updates: 5911 (if approved)                                        sn3rd
-Intended status: Standards Track                            4 March 2024
-Expires: 5 September 2024
+Intended status: Standards Track                            18 June 2024
+Expires: 20 December 2024
 
 
                  Certificate Management over CMS (CMC)
@@ -67,7 +67,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 September 2024.
+   This Internet-Draft will expire on 20 December 2024.
 
 Copyright Notice
 
@@ -293,6 +293,12 @@ Table of Contents
    --03 todo:
 
    *  Address management of KEM certificate
+
+   --03 version changes:
+
+   *  Publish Trust Anchors Control hashAlgorithm changed to SHA-256
+
+   *  Update DH-POP from RFC2875 to RFC6955
 
    --02 version changes:
 
@@ -3384,9 +3390,9 @@ Table of Contents
               DOI 10.17487/RFC4211, September 2005,
               <https://www.rfc-editor.org/rfc/rfc4211>.
 
-   [DH-POP]   Prafullchandra, H. and J. Schaad, "Diffie-Hellman Proof-
-              of-Possession Algorithms", RFC 2875, DOI 10.17487/RFC2875,
-              July 2000, <https://www.rfc-editor.org/rfc/rfc2875>.
+   [DH-POP]   Schaad, J. and H. Prafullchandra, "Diffie-Hellman Proof-
+              of-Possession Algorithms", RFC 6955, DOI 10.17487/RFC6955,
+              May 2013, <https://www.rfc-editor.org/rfc/rfc6955>.
 
    [HMAC-ALGS]
               Schaad, J. and S. Turner, "Additional New ASN.1 Modules
@@ -3427,9 +3433,8 @@ Table of Contents
               Mandel, J. and S. Turner, "Certificate Management Messages
               over CMS (CMC): Compliance Requirements", Work in
               Progress, Internet-Draft, draft-mandel-lamps-rfc5274bis-
-              01, 8 January 2024,
-              <https://datatracker.ietf.org/doc/html/draft-mandel-lamps-
-              rfc5274bis-01>.
+              02, 4 March 2024, <https://datatracker.ietf.org/doc/html/
+              draft-mandel-lamps-rfc5274bis-02>.
 
    [CMC-PROTv1]
               Schaad, J. and M. Myers, "Certificate Management over CMS
@@ -3439,9 +3444,9 @@ Table of Contents
    [CMC-TRANS]
               Mandel, J. and S. Turner, "Certificate Management over CMS
               (CMC): Transport Protocols", Work in Progress, Internet-
-              Draft, draft-mandel-lamps-rfc5273bis-01, 8 January 2024,
+              Draft, draft-mandel-lamps-rfc5273bis-02, 4 March 2024,
               <https://datatracker.ietf.org/doc/html/draft-mandel-lamps-
-              rfc5273bis-01>.
+              rfc5273bis-02>.
 
    [CMC-Updates]
               Schaad, J., "Certificate Management over CMS (CMC)
